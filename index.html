@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biswajit Ghosh | Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Full-stack developer specializing in building fast, accessible, and scalable web applications. Available for freelance projects."
+    />
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" aria-label="Biswajit Ghosh — Home">
+          <img src="logo.png" alt="Biswajit Ghosh logo" />
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Biswajit Ghosh</h1>
+        <h2 class="hero-role">
+          <span class="typing" id="typing"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          I help businesses turn ideas into fast, accessible, and scalable web
+          applications. From concept to deployment, I build products that users
+          love and clients trust.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Hire Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for freelance projects
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down"
+        ><span></span
+      ></a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01. About</span>
+          <h2 class="section-title">
+            A developer who thinks like a product owner
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a full-stack developer with <strong>6+ years</strong> of
+              experience building web applications for startups, agencies, and
+              independent clients. I specialize in the React/Next.js ecosystem
+              on the frontend and Node.js on the backend.
+            </p>
+            <p>
+              What sets me apart isn't just the code — it's how I approach every
+              project. I ask questions, understand your business goals, and
+              deliver solutions that move the needle. Whether you need a
+              marketing site that converts or a complex dashboard that scales, I
+              treat your product like my own.
+            </p>
+            <p>
+              When I'm not coding, I'm writing about web performance,
+              contributing to open source, or mentoring developers who are just
+              starting out.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">40+</span
+                ><span class="stat-label">Projects Delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">98%</span
+                ><span class="stat-label">Client Satisfaction</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">6+</span
+                ><span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-side reveal">
+            <div class="code-card">
+              <div class="code-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <pre><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Alex Morgan"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Full-Stack Developer"</span>,
+  <span class="c-prop">location</span>: <span class="c-str">"Remote / Worldwide"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Next.js"</span>,
+    <span class="c-str">"Node.js"</span>, <span class="c-str">"TypeScript"</span>,
+    <span class="c-str">"PostgreSQL"</span>, <span class="c-str">"Tailwind"</span>
+  ],
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">passion</span>: <span class="c-str">"Building things that matter"</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02. Services</span>
+          <h2 class="section-title">How I can help your business</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">⚡</div>
+            <h3>Web Applications</h3>
+            <p>
+              Custom SaaS dashboards, internal tools, and customer portals built
+              with React, Next.js, and Node.js. Scalable, secure, and
+              maintainable.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🛒</div>
+            <h3>E-Commerce Solutions</h3>
+            <p>
+              High-converting storefronts and headless commerce experiences.
+              Stripe integration, inventory management, and blazing-fast
+              checkout flows.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🚀</div>
+            <h3>Performance Optimization</h3>
+            <p>
+              Auditing and rebuilding slow sites into Core Web Vitals champions.
+              I've helped clients cut load times by 70% and boost conversions.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🎨</div>
+            <h3>Landing Pages That Convert</h3>
+            <p>
+              Pixel-perfect, animation-rich marketing pages designed to turn
+              visitors into customers. Built with performance and SEO in mind.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🔌</div>
+            <h3>API Development</h3>
+            <p>
+              RESTful and GraphQL APIs, third-party integrations, and backend
+              architecture that grows with your product.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">🛠️</div>
+            <h3>Rescue & Maintenance</h3>
+            <p>
+              Inherited a messy codebase? I can stabilize, refactor, and
+              document existing projects so your team can move forward
+              confidently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Projects -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03. Selected Work</span>
+          <h2 class="section-title">Projects that delivered real results</h2>
+        </div>
+        <div class="projects">
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-1">
+              <div class="project-visual-inner">
+                <span class="project-badge">SaaS</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>FinanceFlow — Analytics Dashboard</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> A fintech startup needed a real-time
+                dashboard to replace their spreadsheet-based reporting, which
+                was error-prone and slow.
+              </p>
+              <p class="project-solution">
+                <strong>Solution:</strong> Built a React + Node.js dashboard
+                with real-time WebSocket updates, role-based access, and
+                exportable reports.
+              </p>
+              <p class="project-result">
+                <strong>Result:</strong> Reduced reporting time by 85% and
+                helped them close 3 enterprise deals in the first quarter.
+              </p>
+              <div class="project-tech">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span
+                ><span>WebSockets</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Live Demo →</a
+                ><a href="#" class="link-arrow">Case Study →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal project-card-reverse">
+            <div class="project-visual project-visual-2">
+              <div class="project-visual-inner">
+                <span class="project-badge">E-Commerce</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Bloom &amp; Co. — Headless Storefront</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> A boutique plant shop was losing sales
+                due to a slow, outdated Shopify theme with a 6-second load time
+                on mobile.
+              </p>
+              <p class="project-solution">
+                <strong>Solution:</strong> Rebuilt the storefront using Next.js
+                and the Shopify Storefront API with optimized images and edge
+                caching.
+              </p>
+              <p class="project-result">
+                <strong>Result:</strong> Mobile load time dropped to 1.2s and
+                conversion rate increased by 42% within two months.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span><span>Shopify API</span><span>Tailwind</span
+                ><span>Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Live Demo →</a
+                ><a href="#" class="link-arrow">Case Study →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-3">
+              <div class="project-visual-inner">
+                <span class="project-badge">Web App</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>TaskPilot — Team Collaboration Tool</h3>
+              <p class="project-problem">
+                <strong>Problem:</strong> A remote agency was juggling five
+                different tools to manage projects, causing miscommunication and
+                missed deadlines.
+              </p>
+              <p class="project-solution">
+                <strong>Solution:</strong> Developed a unified workspace with
+                task boards, real-time comments, file sharing, and Slack
+                integration.
+              </p>
+              <p class="project-result">
+                <strong>Result:</strong> The team consolidated 5 tools into 1,
+                cutting their software costs by 60% and improving on-time
+                delivery.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span><span>TypeScript</span><span>Prisma</span
+                ><span>Redis</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Live Demo →</a
+                ><a href="#" class="link-arrow">Case Study →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-cta reveal">
+          <a href="#contact" class="btn btn-primary">Start a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04. Testimonials</span>
+          <h2 class="section-title">What clients say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial reveal">
+            <p>
+              "Alex took our vague idea and turned it into a fully functional
+              product in eight weeks. He communicated proactively, pushed back
+              when we were wrong, and delivered ahead of schedule. Rare find."
+            </p>
+            <footer>
+              <div class="testimonial-avatar">SC</div>
+              <div>
+                <strong>Sarah Chen</strong><span>Founder, FinanceFlow</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <p>
+              "Our store went from 6-second loads to just over 1 second. The
+              difference in our sales was immediate. Alex doesn't just write
+              code — he understands the business behind it."
+            </p>
+            <footer>
+              <div class="testimonial-avatar">MR</div>
+              <div>
+                <strong>Marcus Rivera</strong
+                ><span>Owner, Bloom &amp; Co.</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <p>
+              "We hired Alex to fix a failing project and he not only stabilized
+              it but documented everything so well that our in-house team could
+              take over easily. That's professionalism."
+            </p>
+            <footer>
+              <div class="testimonial-avatar">JT</div>
+              <div>
+                <strong>Jordan Thompson</strong><span>CTO, TaskPilot</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <span class="section-tag">05. Contact</span>
+            <h2 class="section-title">Let's build something great together</h2>
+            <p>
+              Have a project in mind or just want to chat? I'm currently
+              available for freelance work and would love to hear about what
+              you're building.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span
+                ><a href="mailto:biswajit.ghosh21021983@gmail.com"
+                  >biswajit.ghosh21021983@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="contact-label">Location</span
+                ><span>Remote — working worldwide</span>
+              </li>
+              <li>
+                <span class="contact-label">Response Time</span
+                ><span>Within 24 hours</span>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a
+                href="https://github.com/biswajitghosh01"
+                target="_blank"
+                rel="noopener"
+                class="social-pill"
+                >GitHub</a
+              >
+              <!--<a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener"
+                class="social-pill"
+                >LinkedIn</a
+              >-->
+              <a
+                href="https://www.youtube.com/@FuturePulseDailyy"
+                target="_blank"
+                rel="noopener"
+                class="social-pill"
+                >YouTube</a
+              >-->
+            </div>
+          </div>
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://formspree.io/f/mkjjolje"
+            method="POST"
+          >
+            <!-- Honeypot: invisible to humans, filled by bots → submission discarded -->
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              style="position: absolute; left: -9999px"
+              aria-hidden="true"
+            />
+
+            <!-- Subject line of the email you receive -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New inquiry from portfolio"
+            />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="john@company.com"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Project Type</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select one...</option>
+                <option value="web-app">Web Application</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="landing-page">Landing Page</option>
+                <option value="performance">Performance Optimization</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell me about your project, timeline, and budget..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#home" class="nav-logo" aria-label="Biswajit Ghosh — Home">
+          <img src="logo.png" alt="Biswajit Ghosh logo" />
+        </a>
+        <p class="footer-copy">
+          © <span id="year"></span> Alex Morgan. Built with intent.
+        </p>
+        <div class="footer-links">
+          <a href="#about">About</a><a href="#work">Work</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
