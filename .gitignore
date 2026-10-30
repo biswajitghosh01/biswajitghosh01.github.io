@@ -1,0 +1,43 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+credentials/
+secrets/
+
+# Local data and logs
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.log
+
+# Dependencies, build output, and caches
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+.turbo/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
