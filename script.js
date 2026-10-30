@@ -109,12 +109,15 @@
     const videoUrl = demo.dataset.videoUrl.trim();
     if (!videoUrl) return;
 
+    const visual = demo.closest(".project-visual");
     const video = document.createElement("video");
     video.controls = true;
-    video.preload = "none";
+    video.preload = "metadata";
     video.playsInline = true;
     video.src = videoUrl;
     video.setAttribute("aria-label", demo.dataset.videoLabel);
+    visual.classList.add("has-video");
+    visual.querySelector(".project-visual-inner").remove();
     demo.append(video);
   });
 

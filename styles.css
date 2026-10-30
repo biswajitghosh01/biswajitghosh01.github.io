@@ -629,6 +629,13 @@ canvas {
   transform: scale(1.02);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
 }
+.project-visual.has-video {
+  background: #000;
+}
+.project-visual.has-video::before,
+.project-visual.has-video::after {
+  display: none;
+}
 .project-visual-1 {
   background: linear-gradient(135deg, #1a1040 0%, #2d1b69 50%, #0f3460 100%);
 }
@@ -694,11 +701,11 @@ canvas {
 .project-demo video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  margin-top: 1rem;
+  height: 100%;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: inherit;
   background: #000;
+  object-fit: cover;
 }
 .project-content strong {
   color: var(--text);
