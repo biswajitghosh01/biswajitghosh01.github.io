@@ -104,6 +104,20 @@
   );
   revealEls.forEach((el) => revealObserver.observe(el));
 
+  /* ---------- Project demo videos ---------- */
+  document.querySelectorAll(".project-demo").forEach((demo) => {
+    const videoUrl = demo.dataset.videoUrl.trim();
+    if (!videoUrl) return;
+
+    const video = document.createElement("video");
+    video.controls = true;
+    video.preload = "none";
+    video.playsInline = true;
+    video.src = videoUrl;
+    video.setAttribute("aria-label", demo.dataset.videoLabel);
+    demo.append(video);
+  });
+
   /* ---------- Hero particle network ---------- */
   const canvas = document.getElementById("particles");
   if (
